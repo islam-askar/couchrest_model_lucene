@@ -6,7 +6,7 @@ require "couchrest_model_lucene/version"
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
   s.name        = "couchrest_model_lucene"
-  s.version     = DeviseOrmCouchrestModel::VERSION
+  s.version     = CouchrestModelLucene::VERSION
   s.authors     = ["Islam Askar"]
   s.email       = ["islam.askar@gmail.com"]
   s.homepage    = "https://github.com/islam-askar/couchrest_model_lucene"
