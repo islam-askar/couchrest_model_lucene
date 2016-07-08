@@ -1,0 +1,3 @@
+= CouchrestModelLucene
+
+Integration of Couchrest_Model with Couchdb_lucene.
