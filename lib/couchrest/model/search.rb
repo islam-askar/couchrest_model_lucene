@@ -26,8 +26,7 @@ module CouchRest
           @lucene_index = query.delete(:index) || 'search'
 
           design = "lucene/#@lucene_index" # TODO Use a DesignDoc instance
-
-          super(design, model, query, "#{model.name} \"#@lucene_query\" Search")
+          super(design, model, query, "#{model} \"#@lucene_query\" Search")
 
           setup_sorting
         end
@@ -57,7 +56,7 @@ module CouchRest
         protected
 
         def typed_lucene_query
-          klass = "#{model.model_type_key}:\"#{model.name}\""
+          klass = "#{model.model_type_key}:\"#{model}\""
           query = @lucene_query.blank? ? nil : "(#@lucene_query)"
 
           [klass, query].compact.join(' AND ')

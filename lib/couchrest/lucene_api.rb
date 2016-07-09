@@ -46,13 +46,11 @@ module CouchRest
           raise ArgumentError, "Invalid lucene connection type: #{type}"
         end
 
-        [@host, path].join('/')
+        [@server.uri.to_s, path].join('/')
       end
-
       CouchRest.paramify_url [@fti_base, view].join('/'), params
     end
 
   end
 
 end
-
