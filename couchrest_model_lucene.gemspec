@@ -17,7 +17,6 @@ Gem::Specification.new do |s|
   s.files = Dir["{lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
 
-  s.add_runtime_dependency 'couchrest_model', '>= 2.0.4'
   s.add_development_dependency "bundler", ">= 1.3"
   s.add_development_dependency "rake"
 
